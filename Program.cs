@@ -9,7 +9,7 @@ namespace ConsoleApp1
     class Program
     {
         
-        static string token = "5054431987:AAHda-dOE8keKUqrJk9n8UpxOHSoz3EopM8";
+        static string token = "";
         static Telegram.Bot.TelegramBotClient bot = new TelegramBotClient(token);
         static void  Main(string[] args)
         {
@@ -44,7 +44,7 @@ namespace ConsoleApp1
                             else
                             {
                                 var x = "http://api.openweathermap.org/data/2.5/weather?q=";
-                                var responseTask = clint.GetAsync(x + txt + "&units=metric&APPID=c9143c3f71a3053bf120412bd12e286c");
+                                var responseTask = clint.GetAsync(x + txt + "&units=metric&APPID=");
                                 responseTask.Wait();
 
                                 if (responseTask.IsCompleted)
